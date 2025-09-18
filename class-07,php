@@ -1,0 +1,91 @@
+<?php
+//foreach loop
+// $students = ["Abir","Salman","Rohan"];
+// foreach($students as $student){
+//     echo $student."\n";
+// }
+
+
+//foreach loop in associative array
+// $person = [
+//     "name" => "Salman Khan",
+//     "city" => "Newyork",
+//     "phone" => "01568000000"
+// ];
+
+// foreach($person as $key => $value){
+//     echo "$key : $value";
+//     echo PHP_EOL;
+    
+// }
+
+//remove elements from array
+
+// $person = [
+//     "name" => "Salman Khan",
+//     "city" => "Newyork",
+//     "phone" => "01568000000"
+// ];
+
+// unset($person["name"]);
+// print_r($person);
+
+
+//remove falsy value using array_filter method
+
+// $fruits = ["Mango","",null,false];
+// $output = array_filter($fruits);
+// print_r($output);
+
+//extract method
+// $user = array(
+//     "name" => "Naimul Islam Nabin",
+//     "email" => "naimul@gmail.com",    
+// );
+
+// extract($user);
+
+// echo $name;
+// echo PHP_EOL;
+// echo $email;
+
+//array_slice method
+
+// $number = range(1,10);
+// $sliced = array_slice($number, 5,4);// 5 = index number from where it will start slicing and
+// //4= how many elements it will slice
+// print_r($sliced);
+
+//array_merge method
+// $arr1 = ["Mango","Apple"];
+// $arr2 = ["Orange","Banana"];
+// $mergedArray = array_merge($arr1,$arr2);
+// print_r($mergedArray);
+
+
+//element search in array with in_array method;
+
+$fruits = ["Apple","Banana","Orange"];
+
+if(in_array("Mango",$fruits)){
+    echo "Fruits Found!";
+}else{
+    echo "Not Found!";
+}
+
+//array_diff
+$arr1 = [1,2,3,5];
+$arr2 = [2,3,4,6];
+$output = array_diff($arr1,$arr2);//it checks which elements in the first array are not
+//available in the next arrays here 1 and 5 are not available in the second arrays
+//so it returns 1 and 5;
+
+print_r($output); 
+
+
+
+
+
+
+
+
